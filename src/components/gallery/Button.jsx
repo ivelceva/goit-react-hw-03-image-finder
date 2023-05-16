@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
-//import css from './Button.module.css';
+import css from './Gallery.module.css';
 
 export const LoadMore = ({ onClick }) => {
   return (
-    <button type="button" className="" onClick={onClick}>
+    <button type="button" className={css.loadMoreBtn} onClick={onClick}>
       Load more
     </button>
   );

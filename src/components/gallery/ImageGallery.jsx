@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import ImageGalleryItem from '../gallery/ImageGalleryItem';
-//import css from './ImageGallery.module.css';
+import css from './Gallery.module.css';
 
 export const ImageGallery = ({ hits, onClick }) => {
   return (
-    <ul className="">
+    <ul className={css.gallery}>
       {hits.map(hit => {
         return <ImageGalleryItem key={hit.id} hit={hit} onClick={onClick} />;
       })}
