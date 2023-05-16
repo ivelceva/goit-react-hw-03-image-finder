@@ -29,7 +29,18 @@
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #808080;
+  color: #fff;
+  background-color: #ff9999;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+  rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+  rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.searchFormButton:hover {
+  background-color: #ff6961;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
 }
 
 .searchFormInput {
@@ -40,6 +51,9 @@
   padding: 0 20px;
   color: #808080;
   letter-spacing: 2px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+  rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+  rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 input:focus::placeholder {
