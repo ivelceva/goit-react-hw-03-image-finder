@@ -1,10 +1,10 @@
 import React from 'react';
-//import css from './Loader.module.css';
+import css from './Gallery.module.css';
 
 export default function Loader() {
   return (
-    <div className="">
-      <div className=""></div>
+    <div className={css.backdrop}>
+      <div className={css.loader}></div>
     </div>
   );
 }

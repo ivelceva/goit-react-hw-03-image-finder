@@ -42,3 +42,4 @@ Modal.propTypes = {
   url: PropTypes.string.isRequired,
   closeModal: PropTypes.func.isRequired,
 };
+

@@ -20,8 +20,8 @@ export default ImageGalleryItem;
 
 ImageGalleryItem.propTypes = {
   hit: PropTypes.shape({
-    webformatURL: PropTypes.string,
-    largeImageURL: PropTypes.string,
+    webformatURL: PropTypes.string.isRequired,
+    largeImageURL: PropTypes.string.isRequired,
   }),
   onClick: PropTypes.func.isRequired,
 };
