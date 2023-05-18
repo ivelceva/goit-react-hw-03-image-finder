@@ -1,11 +1,11 @@
 import React from 'react';
 import { Component } from 'react';
-import { getFetch } from './fetch/Fetch';
+import { getFetch } from '../Fetch';
 import Searchbar from './searchBar/SearchBar';
-import { ImageGallery } from './gallery/ImageGallery';
-import Loader from './gallery/Loader';
-import { Modal } from './modal/Modal';
-import { LoadMore } from './gallery/Button';
+import { ImageGallery } from './gallery/imageGallery/ImageGallery';
+import Loader from './gallery/loader/Loader';
+import { Modal } from './gallery/modal/Modal';
+import { LoadMore } from './gallery/button/Button';
 
 export default class Gallery extends Component {
   state = {
@@ -87,7 +87,7 @@ export default class Gallery extends Component {
     }
   };
 
-  toggleModal = url => {
+  toggleModal = (url) => {
     this.setState(({ showModal }) => ({
       showModal: !showModal,
       currentlargeImageURL: url,
@@ -111,7 +111,7 @@ export default class Gallery extends Component {
         {loading && <Loader />}
         {buttonVisible && <LoadMore onClick={handleLoadMore} />}
         {currentlargeImageURL && (
-          <Modal url={currentlargeImageURL} closeModal={toggleModal} />
+          <Modal largeImageURL={currentlargeImageURL} onModalClose={toggleModal} />
         )}
       </>
     );
